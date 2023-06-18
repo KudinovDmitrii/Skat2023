@@ -89,8 +89,8 @@ void setup() {
   // инициализация DMP
   mpu.dmpInitialize();
   mpu.setDMPEnabled(true);
-  mot1.writeMicroseconds(800);
-  mot2.writeMicroseconds(800);
+  mot1.writeMicroseconds(801);
+  mot2.writeMicroseconds(801);
 }
 
 void loop() {
