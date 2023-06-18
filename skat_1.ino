@@ -112,12 +112,6 @@ if((pulseIn(pin_switch, HIGH) > 1350) && (pulseIn(pin_switch, HIGH) < 1650)){
   //impel.writeMicroseconds(speed1);
   serv1.write(sum1);
   serv2.write(sum2);
-
-  Serial.println("speed, serv1, serv2, switch");
-  Serial.println(speed1);
-  Serial.println(sum1);
-  Serial.println(sum2);
-  Serial.println(pulseIn(pin_switch, HIGH));
   t = millis();
   }
 }
@@ -141,12 +135,6 @@ if((pulseIn(pin_switch, HIGH) > 1850) && (pulseIn(pin_switch, HIGH) < 2150)){
         int sum2 = constrain(res1 - res2, -30, 30);
         serv1.write(90+sum1);
         serv2.write(90+sum2);
-        
-        Serial.println("speed, serv1, serv2, switch");
-        Serial.println(1000);
-        Serial.println(90 + sum1);
-        Serial.println(90 + sum2);
-        Serial.println(pulseIn(pin_switch, HIGH));
       }
   }
 
